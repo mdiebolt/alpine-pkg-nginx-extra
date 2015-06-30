@@ -2,8 +2,9 @@
 # Contributor: Jeff Bilyk <jbilyk@gmail.com>
 # Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Andy Shinn <andys@andyshinn.as>
+# Contributor: Matt Diebolt <mdiebolt@gmail.com>
 
-pkgname=nginx-extra
+pkgname=nginx-extra-geoip
 _pkgname=nginx
 pkgver=1.6.2
 _nginxrtmpver=1.1.6
@@ -55,6 +56,7 @@ build() {
 		--with-http_dav_module \
 		--with-http_ssl_module \
 		--with-http_stub_status_module \
+		--with-http_geoip_module \
 		--with-http_gzip_static_module \
 		--with-http_spdy_module \
 		--with-mail \
